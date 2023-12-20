@@ -13,6 +13,7 @@
 @property (weak) IBOutlet NSTextField *crashFileInput;
 @property (weak) IBOutlet NSTextField *dSYMUUIDValue;
 @property (weak) IBOutlet NSTextField *crashUUIDValue;
+@property (weak) IBOutlet NSTextField *xcodeNameTF;
 
 @property (weak) IBOutlet NSButton *symbolicateAynalyse;
 @property (weak) IBOutlet NSButton *analyseBtn2;
@@ -74,6 +75,7 @@
 - (IBAction)exportSymbolicatedLog:(id)sender {
     NSSavePanel *panel = [NSSavePanel savePanel];
     panel.title = @"保存日志文件";
+    panel.nameFieldStringValue = @"Result.crash";
     [panel setMessage:@"选择文件保存地址"];
     [panel setAllowsOtherFileTypes:YES];
     [panel setExtensionHidden:NO];
@@ -92,10 +94,12 @@
 {
     //先查找xcode名称，不同的xcode版本，APP名称不一致，例如可能是XCode-beta.app
     NSString *xcodeName = [self runCommand:@"ls /Applications/ | grep Xcode"];
-    if ([xcodeName containsString:@"Xcode"]) {
+    NSArray *xcodeNameArr = [xcodeName componentsSeparatedByString:@"\n"];
+    NSString *userWriteName = [NSString stringWithFormat:@"%@.app", self.xcodeNameTF.stringValue ?: @"Xcode"];
+    if ([xcodeNameArr containsObject:userWriteName]) {
+        self.xcodeName = userWriteName;
+    } else {
         self.xcodeName = [xcodeName stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    }else{
-        
     }
 }
 - (NSString *)getdSYM_UUID:(NSString *)dSYMPath
@@ -119,6 +123,7 @@
     if (dictInfo) {
         //第一行无uuid信息
         NSString *uuid = [dictInfo valueForKey:@"slice_uuid"];
+        uuid = [uuid stringByReplacingOccurrencesOfString:@"-" withString:@""];
         return uuid?[uuid uppercaseString]:nil;
     }else{
         //通过binary images段获取
@@ -141,6 +146,7 @@
                     NSArray *resAry = [binaryStr componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
                     if (resAry.count == 3) {
                         NSString *uuid = resAry[1];
+                        uuid = [uuid stringByReplacingOccurrencesOfString:@"-" withString:@""];
                         return uuid?[uuid uppercaseString]:nil;
                     }
                 }

@@ -12,28 +12,8 @@
 		EA9057BE27F3F7AC006DE9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9057BD27F3F7AC006DE9D6 /* Assets.xcassets */; };
 		EA9057C127F3F7AC006DE9D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9057BF27F3F7AC006DE9D6 /* Main.storyboard */; };
 		EA9057C327F3F7AC006DE9D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9057C227F3F7AC006DE9D6 /* main.m */; };
-		EA9057CD27F3F7AD006DE9D6 /* CrashDecoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9057CC27F3F7AD006DE9D6 /* CrashDecoderTests.m */; };
-		EA9057D727F3F7AD006DE9D6 /* CrashDecoderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9057D627F3F7AD006DE9D6 /* CrashDecoderUITests.m */; };
-		EA9057D927F3F7AD006DE9D6 /* CrashDecoderUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9057D827F3F7AD006DE9D6 /* CrashDecoderUITestsLaunchTests.m */; };
 		EA9057E727F4376A006DE9D6 /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9057E627F4376A006DE9D6 /* ContainerView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EA9057C927F3F7AD006DE9D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA9057AC27F3F7AA006DE9D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA9057B327F3F7AA006DE9D6;
-			remoteInfo = CrashDecoder;
-		};
-		EA9057D327F3F7AD006DE9D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA9057AC27F3F7AA006DE9D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA9057B327F3F7AA006DE9D6;
-			remoteInfo = CrashDecoder;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EA9057B427F3F7AA006DE9D6 /* CrashDecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashDecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,31 +24,12 @@
 		EA9057BD27F3F7AC006DE9D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9057C027F3F7AC006DE9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA9057C227F3F7AC006DE9D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EA9057C827F3F7AD006DE9D6 /* CrashDecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashDecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA9057CC27F3F7AD006DE9D6 /* CrashDecoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashDecoderTests.m; sourceTree = "<group>"; };
-		EA9057D227F3F7AD006DE9D6 /* CrashDecoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashDecoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA9057D627F3F7AD006DE9D6 /* CrashDecoderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashDecoderUITests.m; sourceTree = "<group>"; };
-		EA9057D827F3F7AD006DE9D6 /* CrashDecoderUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashDecoderUITestsLaunchTests.m; sourceTree = "<group>"; };
 		EA9057E527F4376A006DE9D6 /* ContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerView.h; sourceTree = "<group>"; };
 		EA9057E627F4376A006DE9D6 /* ContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EA9057B127F3F7AA006DE9D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA9057C527F3F7AD006DE9D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA9057CF27F3F7AD006DE9D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,8 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				EA9057B627F3F7AA006DE9D6 /* CrashDecoder */,
-				EA9057CB27F3F7AD006DE9D6 /* CrashDecoderTests */,
-				EA9057D527F3F7AD006DE9D6 /* CrashDecoderUITests */,
 				EA9057B527F3F7AA006DE9D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				EA9057B427F3F7AA006DE9D6 /* CrashDecoder.app */,
-				EA9057C827F3F7AD006DE9D6 /* CrashDecoderTests.xctest */,
-				EA9057D227F3F7AD006DE9D6 /* CrashDecoderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,23 +69,6 @@
 				EA9057C227F3F7AC006DE9D6 /* main.m */,
 			);
 			path = CrashDecoder;
-			sourceTree = "<group>";
-		};
-		EA9057CB27F3F7AD006DE9D6 /* CrashDecoderTests */ = {
-			isa = PBXGroup;
-			children = (
-				EA9057CC27F3F7AD006DE9D6 /* CrashDecoderTests.m */,
-			);
-			path = CrashDecoderTests;
-			sourceTree = "<group>";
-		};
-		EA9057D527F3F7AD006DE9D6 /* CrashDecoderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EA9057D627F3F7AD006DE9D6 /* CrashDecoderUITests.m */,
-				EA9057D827F3F7AD006DE9D6 /* CrashDecoderUITestsLaunchTests.m */,
-			);
-			path = CrashDecoderUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,42 +91,6 @@
 			productReference = EA9057B427F3F7AA006DE9D6 /* CrashDecoder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA9057C727F3F7AD006DE9D6 /* CrashDecoderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA9057DF27F3F7AD006DE9D6 /* Build configuration list for PBXNativeTarget "CrashDecoderTests" */;
-			buildPhases = (
-				EA9057C427F3F7AD006DE9D6 /* Sources */,
-				EA9057C527F3F7AD006DE9D6 /* Frameworks */,
-				EA9057C627F3F7AD006DE9D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA9057CA27F3F7AD006DE9D6 /* PBXTargetDependency */,
-			);
-			name = CrashDecoderTests;
-			productName = CrashDecoderTests;
-			productReference = EA9057C827F3F7AD006DE9D6 /* CrashDecoderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EA9057D127F3F7AD006DE9D6 /* CrashDecoderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA9057E227F3F7AD006DE9D6 /* Build configuration list for PBXNativeTarget "CrashDecoderUITests" */;
-			buildPhases = (
-				EA9057CE27F3F7AD006DE9D6 /* Sources */,
-				EA9057CF27F3F7AD006DE9D6 /* Frameworks */,
-				EA9057D027F3F7AD006DE9D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA9057D427F3F7AD006DE9D6 /* PBXTargetDependency */,
-			);
-			name = CrashDecoderUITests;
-			productName = CrashDecoderUITests;
-			productReference = EA9057D227F3F7AD006DE9D6 /* CrashDecoderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,14 +102,6 @@
 				TargetAttributes = {
 					EA9057B327F3F7AA006DE9D6 = {
 						CreatedOnToolsVersion = 13.0;
-					};
-					EA9057C727F3F7AD006DE9D6 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = EA9057B327F3F7AA006DE9D6;
-					};
-					EA9057D127F3F7AD006DE9D6 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = EA9057B327F3F7AA006DE9D6;
 					};
 				};
 			};
@@ -223,8 +119,6 @@
 			projectRoot = "";
 			targets = (
 				EA9057B327F3F7AA006DE9D6 /* CrashDecoder */,
-				EA9057C727F3F7AD006DE9D6 /* CrashDecoderTests */,
-				EA9057D127F3F7AD006DE9D6 /* CrashDecoderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,20 +130,6 @@
 			files = (
 				EA9057BE27F3F7AC006DE9D6 /* Assets.xcassets in Resources */,
 				EA9057C127F3F7AC006DE9D6 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA9057C627F3F7AD006DE9D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA9057D027F3F7AD006DE9D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,37 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA9057C427F3F7AD006DE9D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA9057CD27F3F7AD006DE9D6 /* CrashDecoderTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA9057CE27F3F7AD006DE9D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA9057D927F3F7AD006DE9D6 /* CrashDecoderUITestsLaunchTests.m in Sources */,
-				EA9057D727F3F7AD006DE9D6 /* CrashDecoderUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EA9057CA27F3F7AD006DE9D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA9057B327F3F7AA006DE9D6 /* CrashDecoder */;
-			targetProxy = EA9057C927F3F7AD006DE9D6 /* PBXContainerItemProxy */;
-		};
-		EA9057D427F3F7AD006DE9D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA9057B327F3F7AA006DE9D6 /* CrashDecoder */;
-			targetProxy = EA9057D327F3F7AD006DE9D6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EA9057BF27F3F7AC006DE9D6 /* Main.storyboard */ = {
@@ -482,90 +332,6 @@
 			};
 			name = Release;
 		};
-		EA9057E027F3F7AD006DE9D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xtrong.CrashDecoderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrashDecoder.app/Contents/MacOS/CrashDecoder";
-			};
-			name = Debug;
-		};
-		EA9057E127F3F7AD006DE9D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xtrong.CrashDecoderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrashDecoder.app/Contents/MacOS/CrashDecoder";
-			};
-			name = Release;
-		};
-		EA9057E327F3F7AD006DE9D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xtrong.CrashDecoderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_TARGET_NAME = CrashDecoder;
-			};
-			name = Debug;
-		};
-		EA9057E427F3F7AD006DE9D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xtrong.CrashDecoderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_TARGET_NAME = CrashDecoder;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,24 +349,6 @@
 			buildConfigurations = (
 				EA9057DD27F3F7AD006DE9D6 /* Debug */,
 				EA9057DE27F3F7AD006DE9D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA9057DF27F3F7AD006DE9D6 /* Build configuration list for PBXNativeTarget "CrashDecoderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA9057E027F3F7AD006DE9D6 /* Debug */,
-				EA9057E127F3F7AD006DE9D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA9057E227F3F7AD006DE9D6 /* Build configuration list for PBXNativeTarget "CrashDecoderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA9057E327F3F7AD006DE9D6 /* Debug */,
-				EA9057E427F3F7AD006DE9D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
